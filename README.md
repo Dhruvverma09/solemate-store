@@ -103,21 +103,6 @@ Try `SOLEMATE10` at checkout for **10% off**!
 
 ---
 
-## Deploy to Vercel + Railway (Free)
-
-**Backend → Railway**
-1. Push repo to GitHub
-2. Go to [railway.app](https://railway.app) → New Project → Deploy from GitHub
-3. Select the `server/` folder
-4. Done — copy the URL (e.g. `https://solemate-server.railway.app`)
-
-**Frontend → Vercel**
-1. In `client/src/App.jsx`, change `const API = "http://localhost:5000/api"` to your Railway URL
-2. Go to [vercel.com](https://vercel.com) → Import → select `client/` folder
-3. Deploy!
-
----
-
 ## License
 
 MIT — free to use for learning and portfolio.
