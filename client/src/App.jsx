@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import "./App.css";
 
-const API = "process.env.REACT_APP_API_URL";
-
+const API = process.env.REACT_APP_API_URL;
+fetch(`${API}/api/signup`)
 const PRODUCTS = [
   { id:1, name:"SoleMate Pro X",    category:"Road Running",   price:12999, oldPrice:18999, discount:"31% OFF", rating:4.9, reviews:2341, desc:"Carbon plate + ReactFoam V3. Built for speed and daily mileage.",  image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80", sizes:[6,7,8,9,10,11,12], soldOut:[6,12], tag:"Best Seller", isNew:false },
   { id:2, name:"SoleMate Trail XT", category:"Trail Running",  price:9999,  oldPrice:14999, discount:"33% OFF", rating:4.7, reviews:1102, desc:"Aggressive grip, reinforced toe cap. Dominate any trail.",            image:"https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80", sizes:[6,7,8,9,10,11],    soldOut:[6],     tag:"Sale",        isNew:false },
